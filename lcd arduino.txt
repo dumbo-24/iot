@@ -1,0 +1,13 @@
+#include<LiquidCrystal.h> 
+LiquidCrystal LCD(12,11,5,4,3,2); // (RS, Enable, D4, D5 , D6, D7) 
+void setup () 
+{ 
+} 
+LCD.begin(16,2); 
+void loop () 
+{ 
+LCD.setCursor(0,0); // (0 position, 0 line) 
+delay(1000); 
+LCD.print("Yash Tapkir ECE"); 
+delay(1000); 
+}
